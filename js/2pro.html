@@ -1,0 +1,22 @@
+<!-- Program 2: Design a JavaScript program to display the
+multiplication table by accepting the number and limit. -->
+<!DOCTYPE html>
+<html>
+<body>
+<input type="number" id="num" placeholder="Number">
+<input type="number" id="limit" placeholder="Limit">
+<div id="result"></div>
+<button onclick="table()">Show Table</button>
+<script>
+function table() {
+ let n = parseInt(document.getElementById("num").value);
+ let l = parseInt(document.getElementById("limit").value);
+ let out = "";
+ for (let i = 1; i <= l; i++) {
+ out += `${n} x ${i} = ${n*i}<br>`;
+ }
+ document.getElementById("result").innerHTML = out;
+}
+</script>
+</body>
+</html>

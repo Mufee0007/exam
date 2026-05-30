@@ -1,0 +1,16 @@
+<!-- Program 3: Write a JavaScript program to store different colors
+in an array and change the background color of the page. -->
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="changeColor()">Change Background</button>
+<script>
+let colors = ["red", "green", "blue", "yellow", "pink"];
+let i = 0;
+function changeColor() {
+ document.body.style.backgroundColor = colors[i];
+ i = (i + 1) % colors.length;
+}
+</script>
+</body>
+</html>

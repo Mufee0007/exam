@@ -1,0 +1,15 @@
+<!-- Program 5: Write a JavaScript function to display
+the current date and time. -->
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="showDate()">Show Date & Time</button>
+<p id="dt"></p>
+<script>
+function showDate() {
+ let now = new Date();
+ document.getElementById("dt").innerHTML = now;
+}
+</script>
+</body>
+</html>

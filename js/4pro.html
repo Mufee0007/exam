@@ -1,0 +1,21 @@
+<!-- Program 4: Write a JavaScript program to change the text color
+and background color of a textbox using onfocus and onblur events. -->
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text"
+onfocus="focusFun(this)"
+onblur="blurFun(this)"
+placeholder="Enter text">
+<script>
+function focusFun(x) {
+ x.style.background = "yellow";
+ x.style.color = "red";
+}
+function blurFun(x) {
+ x.style.background = "white";
+ x.style.color = "black";
+}
+</script>
+</body>
+</html>
